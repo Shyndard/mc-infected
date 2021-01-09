@@ -1,0 +1,5 @@
+party:
+  # Minimum player to start party
+  min-player: 3
+  # Maximum player in party
+  max-player: 20

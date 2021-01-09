@@ -1,0 +1,15 @@
+main: com.shyndard.minecraft.infected.MainPlugin
+name: Infected
+version: "1.0.0"
+description: Infected plugin
+author: shyndard
+commands:
+   infected:
+      description: Infected's command
+      usage: Usage /<command>
+      aliases: [inf]
+api-version: 1.13
+permissions:
+  infected.admin:
+    description: Allows a player to administrate plugin
+    default: op

@@ -1,6 +1,7 @@
 package com.shyndard.minecraft.infected;
 
 import com.shyndard.minecraft.infected.event.WorldEvent;
+import com.shyndard.minecraft.infected.service.MapService;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -21,7 +22,7 @@ public class MainPlugin extends JavaPlugin {
 		saveDefaultConfig();
 
 		// Init services
-		// Nothing yet
+		MapService.getInstance().loadMaps();
 
 		// Register event
 		getServer().getPluginManager().registerEvents(new WorldEvent(), this);
